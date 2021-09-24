@@ -309,8 +309,8 @@ textareafocusplaceholder {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: space-between;
   width: 100%;
 }
 .header__wrapper {
@@ -318,11 +318,11 @@ textareafocusplaceholder {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   width: 100%;
 }
 .header__menu {
@@ -332,13 +332,12 @@ textareafocusplaceholder {
 }
 .logo,
 .menu {
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .logo {
   padding-right: 95px;
@@ -369,11 +368,18 @@ textareafocusplaceholder {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   position: relative;
-  padding: 0 30px;
+  padding: 3px 30px;
   text-align: center;
+  line-height: 20px;
   color: #b3bfc1;
   font-weight: 500;
   transition: all 0.3s ease-out;
+}
+.mobile {
+  background-color: white;
+  color:black !important;
+  padding:5px 20px;
+  border-radius: 15px;
 }
 .menu__link:after {
   content: '';
@@ -2530,7 +2536,6 @@ p {
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
- 
   justify-content: space-between;
 	-webkit-box-pack: justify;
 	-webkit-justify-content: space-between;
@@ -2547,11 +2552,9 @@ p {
   background-color: rgb(0, 0, 0);
   content: "";
   height: 2px;
-  
   position: absolute;
   top:45px;
   width: 80px;
-  
 }
 .qr-cod__block {
   width: 230px;
@@ -2572,7 +2575,6 @@ p {
   background: rgba(255, 255, 255, 0.4);
  width: 45px;
  height: 45px;
-  
   border-radius: 100%;
   display: flex;
 	display: -webkit-box;
@@ -2654,17 +2656,15 @@ p {
   }
 }
 .light-btn {
-  background-color: yellow;
+  
 }
 .pressed-button {
   text-decoration: none;
-  
+ 
   border-radius: 5px;
   background-image: linear-gradient(45deg, #57e787 0%, #b6eb3c 50%, #21a9d3 100%);
   background-position: 100% 0;
   background-size: 200% 200%;
-  height: auto;
-  margin-top: 25px;
   color: white;
   box-shadow: 0 16px 32px 0 rgba(0, 40, 120, .35);
   transition: .5s;
